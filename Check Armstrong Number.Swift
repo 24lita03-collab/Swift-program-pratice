@@ -1,0 +1,17 @@
+import Foundation
+
+let number = 153
+var temp = number
+var sum = 0
+
+while temp > 0 {
+    let digit = temp % 10
+    sum += digit * digit * digit
+    temp /= 10
+}
+
+if sum == number {
+    print("Armstrong Number")
+} else {
+    print("Not Armstrong Number")
+}
